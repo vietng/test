@@ -1,0 +1,41 @@
+site_name: SWFT
+site_url: https://swft-np.dev.woodside
+theme:
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+nav:
+  - Home: index.md
+  - ISD: isd.md
+  - SWFT Auth: swft-auth.md
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
