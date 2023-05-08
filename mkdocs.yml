@@ -38,3 +38,4 @@ markdown_extensions:
   - pymdownx.superfences
 plugins:
   - techdocs-core
+repo_url: https://github.com/vietng/test
