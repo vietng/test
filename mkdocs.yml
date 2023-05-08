@@ -7,14 +7,11 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-  palette: 
-    # Palette toggle for light mode
+  palette:
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/brightness-4
@@ -30,7 +27,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:pymdownx.superfences.fence_code_format ''
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -39,3 +36,5 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+plugins:
+  - techdocs-core
